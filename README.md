@@ -1,18 +1,20 @@
 # DictionarApp
 
-## Build Setup
+![preview](./preview.png)
+
+## <small>`DEV 👨‍💻`</small>
 
 ```bash
-# install dependencies
 $ npm install
-
-# serve with hot reload at localhost:3000
 $ npm run dev
+# serve with hot reload at localhost:3000
+```
 
-# build for production and launch server
+## <small>`BUILD 🏃`</small>
+
+```bash
+$ npm install
 $ npm run build
 $ npm run start
-
-# generate static project
-$ npm run generate
+# build for production and launch server
 ```

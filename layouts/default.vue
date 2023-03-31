@@ -10,10 +10,18 @@
 <style scoped lang="scss">
 .wrapper {
   display: flex;
-  justify-content: center;
+  @media (min-width: $breakpoint-pc) {
+    justify-content: center;
+  }
 }
 main {
-  display: grid;
-  grid-template-columns: minmax(0, $word-width-pc) $nav-width-pc;
+  display: block;
+  max-width: $word-max-width;
+  @media (min-width: $breakpoint-pc) {
+    display: grid;
+    max-width: none;
+    grid-template-columns: minmax(0, $word-max-width) $nav-width;
+    column-gap: 5rem;
+  }
 }
 </style>

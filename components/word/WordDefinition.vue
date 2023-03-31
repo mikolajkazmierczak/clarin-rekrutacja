@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+* {
+  overflow-wrap: break-word;
+}
 .definition {
   margin-bottom: 1rem;
   font-weight: 700;

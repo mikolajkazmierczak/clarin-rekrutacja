@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 div {
   display: inline-block;
   padding: 0.25rem 0.75rem 0.1rem 0.75rem;

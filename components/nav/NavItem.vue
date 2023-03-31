@@ -6,7 +6,7 @@
       animate: isAnimated,
     }"
     :href="`/${word}`"
-    @click.prevent="toggleAnimation"
+    @click.prevent="navigate"
   >
     {{ word }}
   </a>
@@ -29,9 +29,11 @@ export default {
     isAnimated: false,
   }),
   methods: {
-    toggleAnimation() {
+    navigate() {
       if (!this.isActive) {
         this.$router.push(`/${this.word}`);
+        this.$emit("navigate");
+        // animate only once
         if (!this.isAnimated) {
           this.isAnimated = true;
           setTimeout(() => {

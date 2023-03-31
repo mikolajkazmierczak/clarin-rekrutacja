@@ -26,10 +26,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content {
-  padding: 5rem 0;
-  padding-right: 8rem;
+  padding: 5rem 1.5rem;
 }
 .title {
   font-size: 2.75rem;
